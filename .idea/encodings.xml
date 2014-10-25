@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/Gruntfile.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/index.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/guess/answer/answer.controller.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/guess/guess.module.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/guess/question/question.controller.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/styles/components/guess/question.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/styles/components/typography.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/styles/main.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/guess/answer/answer.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/guess/question/question.html" charset="UTF-8" />
+  </component>
+</project>
+

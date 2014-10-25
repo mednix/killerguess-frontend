@@ -1,0 +1,25 @@
+
+<div class="jumbotron">
+  <form ng-submit="guess()" action="" method="POST" role="form">
+  	<legend>{{answer.phrase}}</legend>
+
+  	<div>
+      {{answer.value}}
+  	</div>
+    <div class="alert alert-danger" ng-hide="isCorrect()">
+    	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    	<strong>You are wrong!</strong>
+    </div>
+    <div class="alert alert-success" ng-show="isCorrect()">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <strong>Your are right!</strong>
+    </div>
+    <div class="">
+        <img ng-src="{{question.image.src}}" alt="">
+    </div>
+
+
+  	<button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
