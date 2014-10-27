@@ -27,6 +27,8 @@ module.exports = function(config) {
       'bower_components/angular-sanitize/angular-sanitize.js',
       'bower_components/angular-touch/angular-touch.js',
       'app/scripts/*.js',
+      'app/scripts/common/*.js',
+      'app/scripts/common/**/*.js',
       'app/scripts/guess/*.js',
       'app/scripts/guess/**/*.js',
       'test/mock/**/*.js',
@@ -34,7 +36,7 @@ module.exports = function(config) {
     ],
 
     // list of files / patterns to exclude
-    exclude: [],
+      exclude: ['bower_components/angular/angular-scenario.js'],
 
     // web server port
     port: 8080,
@@ -60,12 +62,12 @@ module.exports = function(config) {
 
     // Continuous Integration mode
     // if true, it capture browsers, run tests and exit
-    singleRun: false,
+    singleRun: true,
 
     colors: true,
 
     // Code coverage report
-    reporters: ['progress', 'coverage'],
+    reporters: ['dots','junit', 'coverage'],
     //preprocessors: {
     //  'app/scripts/**/*.js': ['coverage']
     //},

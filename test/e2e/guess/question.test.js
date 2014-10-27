@@ -1,8 +1,8 @@
-var env=require('../../.env.js');
+'use strict';
 var questionPage=require('../pages/question.page.js');
-var answerPage=require('../pages/answer.page.js');
+//var answerPage=require('../pages/answer.page.js');
 
-describe('Guess Module ', function() {
+describe('Module: Guess/Question ', function() {
   beforeEach(function () {
     questionPage.get();
   });

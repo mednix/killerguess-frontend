@@ -1,10 +1,11 @@
+'use strict';
 angular.module('guess')
   .controller('AnswerController', function ($scope) {
     $scope.question = {
       image: {
         src: 'http://lorempixel.com/500/600/cats'
       },
-      phrase: 'Ch7al y9dr ykoun f 3mr had lmchicha?',
+      phrase: 'Ch7al y9dr ykoun f 3mr had lmchicha?'
     };
     $scope.guess= 45;
     $scope.answer = {
@@ -17,5 +18,5 @@ angular.module('guess')
     };
     $scope.isWrong=function(){
       return !$scope.isRight();
-    }
+    };
   });

@@ -10,8 +10,9 @@
  */
 angular
   .module('app', [
-    'guess'
-  ]).config(function ($routeProvider, $locationProvider) {
+        'common',
+        'guess'
+  ]).config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/home/home.html',
@@ -21,4 +22,3 @@ angular
         redirectTo: '/'
       });
   });
-;

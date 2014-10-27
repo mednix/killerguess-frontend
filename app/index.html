@@ -1,8 +1,9 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js" >
   <head>
     <meta charset="utf-8">
-    <title></title>
+
+      <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -21,16 +22,16 @@
 
     <!-- Add your site or application content here -->
     <div class="container">
-      <div class="header" ng-include="'views/common/header.html'">
+      <ng-include src="'views/common/header.html'">
+      </ng-include>
 
-      </div>
 
       <div ng-view="">
 
       </div>
 
       <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the League of Superheros</p>
+        <p><span class="glyphicon glyphicon-heart"></span> from the League of Cool People</p>
       </div>
     </div>
 
@@ -79,10 +80,16 @@
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/guess/guess.module.js"></script>
-        <script src="scripts/guess/question/question.controller.js"></script>
-        <script src="scripts/guess/answer/answer.controller.js"></script>
+            <script src="scripts/app.js"></script>
+
+            <script src="scripts/home/home.controller.js"></script>
+
+            <script src="scripts/common/common.module.js"></script>
+            <script src="scripts/common/header/header.controller.js"></script>
+
+            <script src="scripts/guess/guess.module.js"></script>
+            <script src="scripts/guess/question/question.controller.js"></script>
+            <script src="scripts/guess/answer/answer.controller.js"></script>
         <!-- endbuild -->
 </body>
 </html>
