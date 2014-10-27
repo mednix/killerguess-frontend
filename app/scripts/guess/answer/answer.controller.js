@@ -20,3 +20,4 @@ angular.module('guess')
       return !$scope.isRight();
     };
   });
+

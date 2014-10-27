@@ -1,6 +1,6 @@
-env=require('./.env.js');
+var env=require('./.env.js');
 exports.config = {
-  allScriptsTimeout: 99999,
+  allScriptsTimeout: 60000,
   //uncomment if you want to start selenium server manually:
   //using the command: node_modules/protractor/bin/webdriver-manager start
   //seleniumAddress: 'http://localhost:4444/wd/hub',
@@ -17,4 +17,4 @@ exports.config = {
     isVerbose : true,
     includeStackTrace : true
   }
-}
+};
