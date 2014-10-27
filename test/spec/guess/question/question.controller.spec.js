@@ -12,11 +12,16 @@ describe('Controller: QuestionController', function () {
     beforeEach(inject(function ($controller, $rootScope) {
         scope = $rootScope.$new();
         QuestionCtrl= $controller('QuestionController', {
-            $scope: scope
+            $scope: scope,
+            $location:{
+              path:function(){}
+            }
         });
     }));
 
-    it('should attach a list of awesomeThings to the scope', function () {
-        expect(scope.awesomeThings.length).toBe(3);
+    it('should make a guess', function () {
+        scope.guess=80;
+        scope.makeGuess();
+        expect(scope.question).toBeDefined();
     });
 });

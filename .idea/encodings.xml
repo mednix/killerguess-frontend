@@ -7,11 +7,26 @@
     <file url="file://$PROJECT_DIR$/app/scripts/guess/answer/answer.controller.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/guess/guess.module.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/guess/question/question.controller.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/home/home.controller.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/styles/components/guess/answer.scss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/styles/components/guess/question.scss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/styles/components/typography.scss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/styles/main.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/styles/mixins/_buttons.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/common/header.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/guess/answer/answer.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/guess/question/question.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/home/home.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/package.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test/.env.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test/.jshintrc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test/e2e/guess/makeGuess.test.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test/e2e/pages/answer.page.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test/e2e/pages/question.page.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test/karma-e2e.conf.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test/karma.conf.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test/protractor.conf.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test/spec/guess/question/question.controller.spec.js" charset="UTF-8" />
   </component>
 </project>
 

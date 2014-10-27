@@ -1,0 +1,37 @@
+@import "compass";
+.answer{
+  .answer__phrase{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+    color:#000000;
+  }
+  .answer__img{
+    img{
+      width:100%;
+    }
+  }
+  .answer__result{
+    i{
+      font-size: 10rem;
+    }
+
+     &.is-right{
+       color:green;
+     }
+    &.is-wrong{
+      color:red;
+    }
+
+  }
+  .answer__btn{
+    @include border-radius(0);
+    background-color: #22B14C;
+    color:#ffffff;
+    font-size: 23px;
+    font-weight: bolder;
+
+    &:hover{
+      color:#ffffff;
+    }
+  }
+}

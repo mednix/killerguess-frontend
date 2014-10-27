@@ -13,16 +13,14 @@ angular
     'ngRoute'
   ])
   .config(function ($routeProvider) {
+
     $routeProvider
-      .when('/', {
+      .when('/question', {
         templateUrl: 'views/guess/question/question.html',
         controller: 'QuestionController'
       })
       .when('/answer', {
         templateUrl: 'views/guess/answer/answer.html',
         controller: 'AnswerController'
-      })
-      .otherwise({
-        redirectTo: '/'
       });
   });

@@ -1,17 +1,21 @@
 angular.module('guess')
   .controller('AnswerController', function ($scope) {
-    $scope.answer = {
-      phrase:'had lbnt f 3mrha',
-      type: 'integer',
-      value: 30
-    };
-    $scope.question={
+    $scope.question = {
       image: {
-        src: 'http://lorempixel.com/500/600/people'
+        src: 'http://lorempixel.com/500/600/cats'
       },
-      guess: 45
+      phrase: 'Ch7al y9dr ykoun f 3mr had lmchicha?',
     };
-    $scope.isCorrect=function(){
-      return $scope.answer.value===$scope.question.guess;
+    $scope.guess= 45;
+    $scope.answer = {
+        phrase:'had lmchicha f 3mrha 10 a3wam',
+        type: 'integer',
+        value: 30
+    };
+    $scope.isRight=function(){
+      return $scope.answer.value===$scope.guess;
+    };
+    $scope.isWrong=function(){
+      return !$scope.isRight();
     }
   });

@@ -1,5 +1,5 @@
-angular.module('guess')
-  .controller('QuestionController', function ($scope, $location) {
+angular.module('app')
+  .controller('HomeController', function ($scope, $location) {
     'use strict';
     $scope.question = {
       image: {

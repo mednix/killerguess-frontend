@@ -1,25 +1,24 @@
+<div class="answer">
+  <div class="answer__row row">
+    <div class="answer__col-1 col-lg-6">
+      <div class="answer__result is-right text-center" ng-show="isRight()">
+        <i class="glyphicon glyphicon-thumbs-up"></i>
+      </div>
+      <div class="answer__result is-wrong text-center" ng-show="isWrong()">
+        <i class="glyphicon glyphicon-thumbs-down"></i>
+      </div>
+      <h1 class="answer__phrase text-center">{{answer.phrase}}</h1>
 
-<div class="jumbotron">
-  <form ng-submit="guess()" action="" method="POST" role="form">
-  	<legend>{{answer.phrase}}</legend>
 
-  	<div>
-      {{answer.value}}
-  	</div>
-    <div class="alert alert-danger" ng-hide="isCorrect()">
-    	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-    	<strong>You are wrong!</strong>
+
+      <button type="submit" class="answer__btn btn btn-block">Une autre image?</button>
     </div>
-    <div class="alert alert-success" ng-show="isCorrect()">
-      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-      <strong>Your are right!</strong>
-    </div>
-    <div class="">
+    <div class="answer__col-2 col-lg-6">
+      <div class="answer__img">
         <img ng-src="{{question.image.src}}" alt="">
+      </div>
     </div>
-
-
-  	<button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+  </div>
 </div>
+
 
