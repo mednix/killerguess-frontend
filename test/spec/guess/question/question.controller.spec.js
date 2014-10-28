@@ -6,22 +6,35 @@ describe('Controller: QuestionController', function () {
     beforeEach(module('guess'));
 
     var QuestionCtrl,
-        scope;
+        $scope,
+        guessMakerService,
+        $location;
 
     // Initialize the controller and a mock scope
     beforeEach(inject(function ($controller, $rootScope) {
-        scope = $rootScope.$new();
+        $scope = $rootScope.$new();
+        guessMakerService={
+          makeGuess: function () {
+          }
+        };
+        $location={
+          path: function () {
+          }
+        };
         QuestionCtrl= $controller('QuestionController', {
-            $scope: scope,
-            $location:{
-              path:function(){}
-            }
+            $scope: $scope,
+            $location:$location,
+            guessMakerService:guessMakerService
         });
     }));
 
-    it('should make a guess', function () {
-        scope.guess=80;
-        scope.makeGuess();
-        expect(scope.question).toBeDefined();
+    it('should submit a guess and redirect to answer page', function () {
+        $scope.guess.id=1;
+        $scope.guess.value=80;
+        spyOn(guessMakerService,'makeGuess');
+        spyOn($location,'path');
+        $scope.makeGuess();
+        expect(guessMakerService.makeGuess).toHaveBeenCalled();
+        expect($location.path).toHaveBeenCalledWith('/answer/'+$scope.guess.id);
     });
 });

@@ -10,8 +10,9 @@
  */
 angular
   .module('app', [
-        'common',
-        'guess'
+    'common',
+    'guess',
+    'webStorageModule'
   ]).config(function ($routeProvider) {
     $routeProvider
       .when('/', {

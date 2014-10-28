@@ -5,8 +5,14 @@
     <file url="file://$PROJECT_DIR$/Gruntfile.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/index.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/core/cache/cache.module.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/core/cache/cache.service.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/core/core.module.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/guess/answer/answer.controller.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/guess/guess.module.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/guess/guessChecker.service.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/guess/guessMaker.service.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/guess/guessRepository.service.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/guess/question/question.controller.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/home/home.controller.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/styles/components/guess/answer.scss" charset="UTF-8" />

@@ -19,7 +19,7 @@ angular
         templateUrl: 'views/guess/question/question.html',
         controller: 'QuestionController'
       })
-      .when('/answer', {
+      .when('/answer/:guessId', {
         templateUrl: 'views/guess/answer/answer.html',
         controller: 'AnswerController'
       });
