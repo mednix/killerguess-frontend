@@ -1,6 +1,6 @@
 'use strict';
 angular.module('guess')
-  .controller('AnswerController', function ($scope,$routeParams, guessRepositoryService, guessCheckerService) {
+  .controller('AnswerController', function ($scope,$routeParams, guessRepository, guessCheckerService) {
     $scope.question = {
       image: {
         src: 'http://lorempixel.com/500/600/cats'
@@ -14,7 +14,7 @@ angular.module('guess')
     };
     $scope.isRight=function(){
       var guess;
-      guess=guessRepositoryService.getById($routeParams.guessId);
+      guess=guessRepository.getById($routeParams.guessId);
       return guessCheckerService.check(guess, $scope.answer);
     };
     $scope.isWrong=function(){

@@ -12,9 +12,12 @@
     <file url="file://$PROJECT_DIR$/app/scripts/guess/controllers/question.controller.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/guess/guess.module.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/guess/services/guessChecker.service.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/scripts/guess/services/guessMaker.service.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/guess/services/guessFactory.service.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/guess/services/guessRepository.service.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/home/home.controller.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/question/controllers/ask.controller.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/question/controllers/manage.controller.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/question/question.module.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/styles/components/guess/answer.scss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/styles/components/guess/question.scss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/styles/components/typography.scss" charset="UTF-8" />
@@ -24,6 +27,7 @@
     <file url="file://$PROJECT_DIR$/app/views/guess/answer/answer.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/guess/question/question.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/home/home.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/question/ask.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/package.json" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/test/.env.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/test/.jshintrc" charset="UTF-8" />

@@ -12,6 +12,7 @@ angular
   .module('app', [
     'common',
     'guess',
+    'question',
     'webStorageModule'
   ]).config(function ($routeProvider) {
     $routeProvider

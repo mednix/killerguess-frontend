@@ -1,7 +1,8 @@
 'use strict';
 angular.module('guess')
-  .controller('QuestionController', function ($scope, $location, guessMakerService) {
+  .controller('QuestionController', function ($scope, $location, guessRepository, guessFactory) {
     $scope.question = {
+      id:5,
       image: {
         src: 'http://lorempixel.com/500/600/cats'
       },
@@ -14,7 +15,16 @@ angular.module('guess')
 
     };
     $scope.makeGuess=function(){
-      guessMakerService.makeGuess($scope.guess, {username:'med'});
-      $location.path('/answer/'+$scope.guess.id);
+      var user='med', guess;
+
+      //if(!authService.isLoggedIn()){
+      //  return;
+      //}
+      //
+      //user=authService.user();
+      guess=guessFactory.make(user,$scope.question, $scope.guess.value);
+
+      guessRepository.save(guess);
+      $location.path('/answer/'+guess.id);
     };
   });

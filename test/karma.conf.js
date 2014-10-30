@@ -26,6 +26,7 @@ module.exports = function(config) {
       'bower_components/angular-route/angular-route.js',
       'bower_components/angular-sanitize/angular-sanitize.js',
       'bower_components/angular-touch/angular-touch.js',
+      'bower_components/angular-webstorage/angular-webstorage.js',
       'app/scripts/*.js',
       'app/scripts/common/*.js',
       'app/scripts/common/**/*.js',

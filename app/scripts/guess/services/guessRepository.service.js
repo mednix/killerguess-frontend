@@ -1,5 +1,5 @@
 'use strict';
-angular.module('guess').service('guessRepositoryService', function(webStorage){
+angular.module('guess').service('guessRepository', function(webStorage){
     var i=0;
     var prefix='guess_';
     this.save=function(guess){
