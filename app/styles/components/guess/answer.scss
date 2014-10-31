@@ -1,10 +1,14 @@
 @import "compass";
 .answer{
+
   .answer__phrase{
     font-family: 'Nunito', sans-serif;
     font-weight: bolder;
-    font-size: large;
-    color:#000000;
+    background-color: #F5F5F5;
+    color: #D8D8D8;
+    font-size: 5em;
+    border-radius: 10px 10px;
+    text-shadow: 1px 1px #fff;
   }
   .answer__img{
     img{
@@ -12,20 +16,22 @@
     }
   }
   .answer__result{
+
     i{
-      font-size: 10rem;
+      font-size: 10em;
     }
 
      &.is-right{
-       color:green;
+       color: #69D783;
      }
     &.is-wrong{
-      color:red;
+      color: #E53836;
     }
 
   }
   .answer__btn{
     @include border-radius(0);
+    border-top: 1px solid #58EC8D;
     background-color: #22B14C;
     color:#ffffff;
     font-size: 23px;
