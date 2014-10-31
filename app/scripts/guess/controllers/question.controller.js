@@ -1,14 +1,7 @@
 'use strict';
 angular.module('guess')
-  .controller('QuestionController', function ($scope, $location, guessRepository, guessFactory) {
-    $scope.question = {
-      id:5,
-      image: {
-        src: 'http://lorempixel.com/500/600/cats'
-      },
-      phrase: 'Ch7al y9dr ykoun f 3mr had lmchicha?'
-
-    };
+  .controller('QuestionController', function ($scope, $location, $routeParams, questionRepository, guessRepository, guessFactory) {
+    $scope.question=questionRepository.getById($routeParams.questionId);
     $scope.guess={
       id:null,
       value:null
@@ -22,6 +15,7 @@ angular.module('guess')
       //}
       //
       //user=authService.user();
+
       guess=guessFactory.make(user,$scope.question, $scope.guess.value);
 
       guessRepository.save(guess);

@@ -15,7 +15,7 @@ angular
   .config(function ($routeProvider) {
 
     $routeProvider
-      .when('/question', {
+      .when('/question/:questionId', {
         templateUrl: 'views/guess/question/question.html',
         controller: 'QuestionController'
       })
