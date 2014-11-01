@@ -5,9 +5,7 @@ angular.module('guess')
     $scope.question = $scope.guess.question;
     $scope.answer = $scope.question.answer;
     $scope.isRight=function(){
-
-
-      return guessCheckerService.check($scope.guess, $scope.answer);
+        return guessCheckerService.check($scope.guess, $scope.answer);
     };
     $scope.isWrong=function(){
       return !$scope.isRight();

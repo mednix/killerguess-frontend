@@ -1,0 +1,16 @@
+<form name="questionForm" class="question" ng-submit="makeGuess()"  role="form" novalidate>
+    <div class="question__container">
+        <div class="question__img">
+            <img alt="" ng-src="{{question.image.src}}">
+        </div>
+        <div class="question__form">
+            <h1 class="question__phrase">{{question.phrase}}</h1>
+            <div class="question__input">
+              <label for=""></label>
+              <input type="number"  name="guessValue" id="" placeholder="" ng-model="guess.value">
+            </div>
+
+            <button type="submit" class="question__btn">Répondre</button>
+        </div>
+    </div>
+</form>

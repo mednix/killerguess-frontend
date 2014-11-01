@@ -16,11 +16,11 @@ angular
 
     $routeProvider
       .when('/question/:questionId', {
-        templateUrl: 'views/guess/question/question.html',
+        templateUrl: 'views/guess/question.html',
         controller: 'QuestionController'
       })
       .when('/answer/:guessId', {
-        templateUrl: 'views/guess/answer/answer.html',
+        templateUrl: 'views/guess/answer.html',
         controller: 'AnswerController'
       });
   });

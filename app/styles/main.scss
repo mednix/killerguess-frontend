@@ -91,6 +91,6 @@ body {
   }
 }
 @import "mixins/buttons";
-@import "components/typography.scss";
-@import "components/guess/question.scss";
-@import "components/guess/answer.scss";
+@import "components/typography";
+@import "components/guess/question";
+@import "components/guess/answer";
