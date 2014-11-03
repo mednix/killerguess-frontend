@@ -1,44 +1,64 @@
 @import "compass";
 .answer{
+  .answer__container{
+    @include make-row();
+    .answer__img{
+      @include make-xs-column(12);
+      @include make-sm-column(6);
+      @include make-md-column(6);
+      @include make-lg-column(6);
 
-  .answer__phrase{
-    font-family: 'Nunito', sans-serif;
-    font-weight: bolder;
-    background-color: #F5F5F5;
-    color: #D8D8D8;
-    font-size: 5em;
-    border-radius: 10px 10px;
-    text-shadow: 1px 1px #fff;
-  }
-  .answer__img{
-    img{
-      width:100%;
+      img{
+        width:100%;
+      }
     }
-  }
-  .answer__result{
+    .answer__result{
+      @include make-xs-column(12);
+      @include make-sm-column(6);
+      @include make-md-column(6);
+      @include make-lg-column(6);
 
-    i{
-      font-size: 10em;
+      .answer__eval{
+        @extend .text-center;
+        .is-right{
+          color: #69D783;
+        }
+        .is-wrong{
+          color: #E53836;
+        }
+        i{
+          font-size: 15em;
+        }
+
+      }
+      .answer__value{
+        @extend .text-center;
+        font-family: 'Nunito', sans-serif;
+        font-weight: bolder;
+        background-color: #F5F5F5;
+        color: #D8D8D8;
+        font-size: 4em;
+        border-radius: 4px 4px;
+        text-shadow: 1px 1px #fff;
+        margin:0.5em 0;
+      }
+
+      .answer__btn{
+        margin: 3em 0;
+        background-color: rgb(241, 245, 250);
+        padding: 16px;
+        border-radius: 4px 4px;
+        p{
+          font-size:1.2em;
+          color: #c1c1c1;
+          @extend .text-center;
+        }
+        a{
+          @extend .guess-btn-primary;
+        }
+      }
     }
 
-     &.is-right{
-       color: #69D783;
-     }
-    &.is-wrong{
-      color: #E53836;
-    }
-
   }
-  .answer__btn{
-    @include border-radius(0);
-    border-top: 1px solid #58EC8D;
-    background-color: #22B14C;
-    color:#ffffff;
-    font-size: 23px;
-    font-weight: bolder;
 
-    &:hover{
-      color:#ffffff;
-    }
-  }
 }

@@ -1,4 +1,18 @@
 @import "compass";
-@mixin btn-primary{
+.guess-btn-primary{
+  @extend .btn;
+  @extend .btn-block;
+  @include border-radius(0);
+  background-color: #22B14C;
+  color:#ffffff;
+  font-size: 23px;
+  font-weight: bolder;
 
+  &:hover{
+    color:#ffffff;
+  }
+  &:focus{
+    box-shadow:none;
+    color: #ffffff;
+  }
 }
