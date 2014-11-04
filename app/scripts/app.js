@@ -10,6 +10,7 @@
  */
 angular
   .module('app', [
+    'core',
     'common',
     'guess',
     'question',

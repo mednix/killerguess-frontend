@@ -1,3 +1,4 @@
 angular.module('core', [
-  'core.cache'
+  'core.session',
+  'core.auth'
 ]);
