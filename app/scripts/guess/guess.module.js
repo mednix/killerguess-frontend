@@ -17,7 +17,10 @@ angular
     $routeProvider
       .when('/question/:questionId', {
         templateUrl: 'views/guess/question.html',
-        controller: 'QuestionController'
+        controller: 'QuestionController',
+        resolve:function(){
+
+        }
       })
       .when('/answer/:guessId', {
         templateUrl: 'views/guess/answer.html',
