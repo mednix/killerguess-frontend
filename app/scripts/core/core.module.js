@@ -1,4 +1,5 @@
 angular.module('core', [
   'core.session',
-  'core.auth'
+  'core.auth',
+  'core.router'
 ]);

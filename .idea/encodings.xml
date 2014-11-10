@@ -10,15 +10,19 @@
     <file url="file://$PROJECT_DIR$/app/scripts/core/cache/cache.module.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/core/cache/cache.service.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/core/core.module.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/core/router/router.module.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/core/router/router.service.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/core/session/session.module.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/core/session/session.service.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/guess/controllers/answer.controller.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/guess/controllers/question.controller.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/guess/guess.module.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/guess/routes.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/guess/services/cheatDetector.service.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/guess/services/guessChecker.service.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/guess/services/guessFactory.service.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/guess/services/guessRepository.service.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/guess/services/routeFilters.service.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/home/home.controller.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/question/controllers/ask.controller.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/question/controllers/manage.controller.js" charset="UTF-8" />
